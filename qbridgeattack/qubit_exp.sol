@@ -4,6 +4,8 @@ pragma solidity 0.8.10;
 import "forge-std/Test.sol";
 import "./interface.sol";
 
+//source code: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/Bridge.sol
+//vulneable: Bridge.sol: L384
 interface IQBridge {
   function deposit(uint8 destinationDomainID, bytes32 resourceID, bytes calldata data) external payable;
 }
@@ -17,6 +19,7 @@ interface IQBridgeHandler {
 contract ContractTest is DSTest {
   CheatCodes cheat = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
   address attacker = 0xD01Ae1A708614948B2B5e0B7AB5be6AFA01325c7;
+ //contracts sourcecoodee: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/handlers/ERC20Handler.sol
   address QBridge = 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6;
   address QBridgeHandler = 0x17B7163cf1Dbd286E262ddc68b553D899B93f526;
 
