@@ -22,9 +22,9 @@ contract ContractTest is DSTest {
  //contracts sourcecoodee: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/handlers/ERC20Handler.sol
   
   //attacked version: 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6; 
-  address QBridge =  0x5FC8d32690cc91D4c39d9d3abcBD16989F875707; 
+  address QBridge =  0xa513E6E4b8f2a923D98304ec87F64353C4D5C853; 
   //attacked version: 0x17B7163cf1Dbd286E262ddc68b553D899B93f526; 
-  address QBridgeHandler =  0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9; 
+  address QBridgeHandler = 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6; 
 
   CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 

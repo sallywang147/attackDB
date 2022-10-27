@@ -1,0 +1,727 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "chainswapAttack2/swap-attack.sol",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "chainswapAttack2/interface.sol": {
+      "lastModificationDate": 1666849541650,
+      "contentHash": "c2c917ce20aaa9141230cb47adba4a80",
+      "sourceName": "chainswapAttack2/interface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.7.0, <0.9.0",
+      "artifacts": {
+        "AMP": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/AMP.json"
+        },
+        "AnyswapV1ERC20": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/AnyswapV1ERC20.json"
+        },
+        "AnyswapV4Router": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/AnyswapV4Router.json"
+        },
+        "CErc20Interface": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/CErc20Interface.json"
+        },
+        "CheatCodes": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/CheatCodes.json"
+        },
+        "DVM": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/DVM.json"
+        },
+        "DataTypes": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/DataTypes.json"
+        },
+        "ERC1820Registry": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ERC1820Registry.json"
+        },
+        "FToken": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/FToken.json"
+        },
+        "Flippaz": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Flippaz.json"
+        },
+        "GymSinglePool": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/GymSinglePool.json"
+        },
+        "GymToken": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/GymToken.json"
+        },
+        "I88mph": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/I88mph.json"
+        },
+        "IACOWriter": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IACOWriter.json"
+        },
+        "IARTH": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IARTH.json"
+        },
+        "IARTHUSD": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IARTHUSD.json"
+        },
+        "IAggregator": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IAggregator.json"
+        },
+        "IAirdrop": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IAirdrop.json"
+        },
+        "IAkutarNFT": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IAkutarNFT.json"
+        },
+        "IBAYCi": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBAYCi.json"
+        },
+        "IBacon": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBacon.json"
+        },
+        "IBadGuysRPFERC721": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBadGuysRPFERC721.json"
+        },
+        "IBalancerVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBalancerVault.json"
+        },
+        "IBaseV1Router01": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBaseV1Router01.json"
+        },
+        "IBeanStalk": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBeanStalk.json"
+        },
+        "IBeethovenVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBeethovenVault.json"
+        },
+        "IBorrowerOperations": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBorrowerOperations.json"
+        },
+        "IBuildFinance": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBuildFinance.json"
+        },
+        "IBunnyZap": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IBunnyZap.json"
+        },
+        "ICErc20Delegate": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ICErc20Delegate.json"
+        },
+        "ICEtherDelegate": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ICEtherDelegate.json"
+        },
+        "IChain": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IChain.json"
+        },
+        "ICointroller": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ICointroller.json"
+        },
+        "ICurvePool": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ICurvePool.json"
+        },
+        "IDOODLENFTXVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IDOODLENFTXVault.json"
+        },
+        "IDeiLenderSolidex": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IDeiLenderSolidex.json"
+        },
+        "IERC1820Registry": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IERC1820Registry.json"
+        },
+        "IERC20": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IERC20.json"
+        },
+        "IERC20Metadata": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IERC20Metadata.json"
+        },
+        "IERC721": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IERC721.json"
+        },
+        "IERC777": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IERC777.json"
+        },
+        "IElevenNeverSellVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IElevenNeverSellVault.json"
+        },
+        "IFBep20Delegator": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IFBep20Delegator.json"
+        },
+        "IFTS": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IFTS.json"
+        },
+        "IFlashLoanRecipient": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IFlashLoanRecipient.json"
+        },
+        "IFortressPriceOracle": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IFortressPriceOracle.json"
+        },
+        "IFortubeBank": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IFortubeBank.json"
+        },
+        "IGovernorAlpha": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IGovernorAlpha.json"
+        },
+        "IGrimBoostVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IGrimBoostVault.json"
+        },
+        "IHarvestUsdcVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IHarvestUsdcVault.json"
+        },
+        "ILand": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ILand.json"
+        },
+        "ILendingPool": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ILendingPool.json"
+        },
+        "ILib": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ILib.json"
+        },
+        "ILiquidityMigrationV2": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ILiquidityMigrationV2.json"
+        },
+        "ILpDepositor": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ILpDepositor.json"
+        },
+        "IMasterChef": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IMasterChef.json"
+        },
+        "INFTXVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/INFTXVault.json"
+        },
+        "INOVO": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/INOVO.json"
+        },
+        "IOmni": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IOmni.json"
+        },
+        "IOneRingVault": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IOneRingVault.json"
+        },
+        "IOracle": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IOracle.json"
+        },
+        "IPancakePair": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IPancakePair.json"
+        },
+        "IPancakeRouter": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IPancakeRouter.json"
+        },
+        "IPriceFeed": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IPriceFeed.json"
+        },
+        "IRToken": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IRToken.json"
+        },
+        "IRedactedCartelSafeERC20": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IRedactedCartelSafeERC20.json"
+        },
+        "IRevest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IRevest.json"
+        },
+        "IRewardsHypervisor": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IRewardsHypervisor.json"
+        },
+        "IRouter": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IRouter.json"
+        },
+        "ISSPv4": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ISSPv4.json"
+        },
+        "ISimplePriceOracle": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ISimplePriceOracle.json"
+        },
+        "ISushiSwap": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ISushiSwap.json"
+        },
+        "ITreasureMarketplaceBuyer": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/ITreasureMarketplaceBuyer.json"
+        },
+        "IUSDC": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUSDC.json"
+        },
+        "IUSDT": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUSDT.json"
+        },
+        "IUniswapV2Factory": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUniswapV2Factory.json"
+        },
+        "IUniswapV2Pair": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUniswapV2Pair.json"
+        },
+        "IUniswapV2Router": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUniswapV2Router.json"
+        },
+        "IUnitroller": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IUnitroller.json"
+        },
+        "IVaultFlipToFlip": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IVaultFlipToFlip.json"
+        },
+        "IVyper": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IVyper.json"
+        },
+        "IWBNB": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IWBNB.json"
+        },
+        "IWFTM": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IWFTM.json"
+        },
+        "IcurveYSwap": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IcurveYSwap.json"
+        },
+        "IfFTS": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IfFTS.json"
+        },
+        "InotVerified": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/InotVerified.json"
+        },
+        "IvVISR": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/IvVISR.json"
+        },
+        "MonoToken": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/MonoToken.json"
+        },
+        "MonoXPool": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/MonoXPool.json"
+        },
+        "Monoswap": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Monoswap.json"
+        },
+        "MultiSig": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/MultiSig.json"
+        },
+        "Pool": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Pool.json"
+        },
+        "Surge": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Surge.json"
+        },
+        "TransferHelper": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/TransferHelper.json"
+        },
+        "USDC": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/USDC.json"
+        },
+        "USDT": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/USDT.json"
+        },
+        "Uni_Pair_V2": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Uni_Pair_V2.json"
+        },
+        "Uni_Router_V2": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/Uni_Router_V2.json"
+        },
+        "VyperContract": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/VyperContract.json"
+        },
+        "WBNB": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/WBNB.json"
+        },
+        "WETH": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/WETH.json"
+        },
+        "WETH9": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/WETH9.json"
+        },
+        "crAMP": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/crAMP.json"
+        },
+        "crETH": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "interface.sol/crETH.json"
+        }
+      }
+    },
+    "chainswapAttack2/swap-attack.sol": {
+      "lastModificationDate": 1666849451813,
+      "contentHash": "a76ffe6868a50406f812c1ac416d199b",
+      "sourceName": "chainswapAttack2/swap-attack.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "chainswapAttack2/interface.sol",
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.7.0, <0.9.0",
+      "artifacts": {
+        "ContractTest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "swap-attack.sol/ContractTest.json"
+        },
+        "IChainswap": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "swap-attack.sol/IChainswap.json"
+        }
+      }
+    },
+    "lib/forge-std/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1666227570172,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1666227569307,
+      "contentHash": "571dde8775a6214a03d6772ee330ead5",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Script.sol/Script.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1666227569307,
+      "contentHash": "75c782f20a301ab9827060a03da071e4",
+      "sourceName": "lib/forge-std/src/StdJson.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdJson": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "StdJson.sol/stdJson.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Test.sol": {
+      "lastModificationDate": 1666227569308,
+      "contentHash": "6cab65c53a9548c2428a10697fd06dd1",
+      "sourceName": "lib/forge-std/src/Test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Test": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Test.sol/Test.json"
+        },
+        "stdError": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Test.sol/stdError.json"
+        },
+        "stdMath": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Test.sol/stdMath.json"
+        },
+        "stdStorage": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Test.sol/stdStorage.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1666227569308,
+      "contentHash": "bd4bde818b3c57b21e0601277b1d2dac",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Vm.sol/Vm.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1666227569313,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1666227569314,
+      "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "console2.sol/console2.json"
+        }
+      }
+    }
+  }
+}

