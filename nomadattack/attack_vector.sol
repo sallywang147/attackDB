@@ -3,7 +3,11 @@ pragma solidity ^0.8.10;
 
 import "forge-std/Test.sol";
 import "./interface.sol";
-
+//buggy commits: 
+//https://github.com/nomad-xyz/monorepo/blob/74d2595ca2f3a514602f4d56bd50c60197b570a0/packages/core-contracts/contracts/Replica.sol
+//healthy fix: 
+//https://github.com/nomad-xyz/monorepo/blob/main/packages/contracts-core/contracts/Replica.sol
+//critical line: acceptableRoot of function process()
 // @KeyInfo - Total Lost : ~152M US$
 // Replica contract mistakenly initialize : 0x53fd92771d2084a9bf39a6477015ef53b7f116c79d98a21be723d06d79024cad
 // Example TXs in this reproduce

@@ -25,3 +25,9 @@
 [submodule "meterattack/healthy-contracts"]
 	path = meterattack/healthy-contracts
 	url = https://github.com/Uniswap/v3-periphery.git
+[submodule "nomadattack/buggy-contracts"]
+	path = nomadattack/buggy-contracts
+	url = https://github.com/nomad-xyz/monorepo.git
+[submodule "nomadattack/healthy-contracts"]
+	path = nomadattack/healthy-contracts
+	url = https://github.com/nomad-xyz/monorepo.git
