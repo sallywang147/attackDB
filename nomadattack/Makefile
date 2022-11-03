@@ -1,3 +1,3 @@
-attack_vector :; @forge test --contracts /Users/sallywang/attackreplay/lifiattack/attack_vector.sol -vvvv
-unit_test :; @forge test --contracts /Users/sallywang/attackreplay/lifiattack/unit_test.sol -vvvv
+attack_vector :; @forge test --contracts /Users/sallywang/attackreplay/nomadattack/attack_vector.sol -vvvv
+unit_test_contrived :; @forge test --contracts /Users/sallywang/attackreplay/nomadattack/unit_test_contrived.sol -vvvv
 
