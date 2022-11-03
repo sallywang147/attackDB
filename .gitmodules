@@ -37,3 +37,6 @@
 [submodule "polyattack/buggy-contracts"]
 	path = polyattack/buggy-contracts
 	url = https://github.com/polynetwork/eth-contracts.git
+[submodule "chainswapAttack/healthy-contracts"]
+	path = chainswapAttack/healthy-contracts
+	url = https://github.com/makevoid/chainswap-contracts.git
