@@ -40,4 +40,6 @@ deploy-testnet :; @forge create ${contract_header} --contracts ${absolute_path} 
 deploy-all :; make deploy-${network} contract=APIConsumer && make deploy-${network} contract=KeepersCounter && make deploy-${network} contract=PriceFeedConsumer && make deploy-${network} contract=VRFConsumerV2
 
 
+attack_vector :; @forge test --contracts /Users/sallywang/attackreplay/polyattack/attack_vector.sol -vvvv
+unit_test_contrived :; @forge test --contracts /Users/sallywang/attackreplay/polyattack/unit_test_contrived.sol -vvvv
 

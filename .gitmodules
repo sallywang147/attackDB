@@ -31,3 +31,9 @@
 [submodule "nomadattack/healthy-contracts"]
 	path = nomadattack/healthy-contracts
 	url = https://github.com/nomad-xyz/monorepo.git
+[submodule "polyattack/healthy-contracts"]
+	path = polyattack/healthy-contracts
+	url = https://github.com/polynetwork/eth-contracts.git
+[submodule "polyattack/buggy-contracts"]
+	path = polyattack/buggy-contracts
+	url = https://github.com/polynetwork/eth-contracts.git
