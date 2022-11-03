@@ -19,3 +19,9 @@
 [submodule "lifiattack/buggy-contracts"]
 	path = lifiattack/buggy-contracts
 	url = https://github.com/lifinance/contracts.git
+[submodule "meterattack/buggy-contracts"]
+	path = meterattack/buggy-contracts
+	url = https://github.com/Uniswap/v2-periphery.git
+[submodule "meterattack/healthy-contracts"]
+	path = meterattack/healthy-contracts
+	url = https://github.com/Uniswap/v3-periphery.git

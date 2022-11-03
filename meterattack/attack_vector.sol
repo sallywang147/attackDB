@@ -4,6 +4,9 @@ pragma solidity 0.8.10;
 import "forge-std/Test.sol";
 import "./interface.sol";
 
+//the buggy version:
+//https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol
+
 interface SushiRouter {
     function swapExactTokensForTokens(uint256 amountIn, uint256 amountOutMin, address[] calldata path, address to, uint256 deadline) external;
 }
