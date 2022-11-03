@@ -8,5 +8,6 @@ contract contrived {
     function contractWhitelist(address) external returns (bool){
       return true;
     }
-    
+
+   
 }

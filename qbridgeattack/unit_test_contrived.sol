@@ -6,11 +6,11 @@ import "./interface.sol";
 import "./contrived.sol";
 //import {healthyHandler} from "./healthy-contracts/contracts/handlers/ERC20Handler.sol";
 
+
 contract unit_test is DSTest {
 
     
      contrived attack;
-
 
     function setUp() public {
 
@@ -18,7 +18,6 @@ contract unit_test is DSTest {
         attack = new contrived(); 
 
     }
-
 
 
     function testWhitelist() public {
