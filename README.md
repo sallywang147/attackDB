@@ -9,8 +9,8 @@ buggy contracts; 3)deploying developed fixed contracts; 4) unit testing buggy co
 of highly sophisticated attacks, we provide contrived buggy contracts to zoom in on the buggy code portion and hopefully 
 provide better clarity for users of this database. The database are below: 
 
-| Attacks       |  date    |loss($m)|buggy source code |fixed source code  |contrived bug included   |unit test        |
-| ------------- | -------- |------- | ---------------- | ------------------|-------------------------|--- -------------|
+| Attacks       |  date    |loss($m)|buggy source code | fixed source code |contrived bug included   |unit test        |
+| ------------- | -------- |------- | ---------------- |-------------------|-------------------------|-----------------|
 | PolyNetwork   | 8/10/2021|   610  | yes              | yes               | yes                     |no (fuzz tested) |
 | Qubit bridge  | 1/27/2022|   80   | yes              | yes               | yes                     | yes             |
 | Nomad Bridge  | 8/03/2022|   190  | yes              | yes               | yes                     | yes             |
