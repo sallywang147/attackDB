@@ -30,7 +30,7 @@ provide better clarity for users of this database. The database are below:
 4. To explore each attack individual, cd into the directory of that attack. Take PolyNetwork as an example,  `cd ~/attackDB/polyattack` and then run the scripts provided below
 
 
-**PolyNetwork Attack**
+**[PolyNetwork Attack](https://research.kudelskisecurity.com/2021/08/12/the-poly-network-hack-explained/)**
 
 Before you run the scripts below, you need to make sure you're in the correct attack directory
 
