@@ -103,7 +103,7 @@ The buggy function:
         );
       ```
       
-      The fixed function: 
+The fixed function: 
       
         ```   
         function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata method, bytes calldata txData) whenNotPaused external returns (bool) {
