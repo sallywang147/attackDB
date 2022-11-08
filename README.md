@@ -74,10 +74,12 @@ YOUR_CONTRACT_ADDRESS \
 If you want more info on how to interact with deployed contracts, please feel free to checkout this [tutorial](https://docs.moonbeam.network/builders/build/eth-api/dev-env/foundry/) 
 
 **What's the fix of the bug?**
+
 In our contrived.sol, we have explanation on specific line causing the bug. Below are some overview. 
 In developer fixed contracts (EthCrossChainManagerForUpgrade.sol), the following function (causing the original bug) is deprecated and inovaction will be automatically reverted: 
 
 The buggy function: 
+
 ```
  function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata method, bytes calldata txData) whenNotPaused external returns (bool) {
         // Load Ethereum cross chain data contract
@@ -101,9 +103,11 @@ The buggy function:
       ```
       
       The fixed function: 
+      
         ```   
         function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata method, bytes calldata txData) whenNotPaused external returns (bool) {
         revert("Polynetwork v1.0 has been suspended, try v2.0.");
         return true;
     }
          ```
+         
