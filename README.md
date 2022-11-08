@@ -27,7 +27,9 @@ provide better clarity for users of this database. The database are below:
 
 3. initialize submodules linking to contract source code: `git submodule update --init --recursive`
 
-4. To explore each attack individual, cd into the directory of that attack. Take PolyNetwork as an example,  `cd ~/attackDB/polyattack` and then run the scripts provided below
+4. Since foundry and openzeppelin contracts are the dependencies of the source code and deploying tools in this database,  You will need to install foundry and openzeppelin first if you haven't done so. Please follow the foundry installation instructions [here](https://book.getfoundry.sh/getting-started/installation) and istall openzeppelin contracts [here](https://docs.openzeppelin.com/cli/2.6/getting-started). If you encounter errors during deployment, it's likely one or both of those dependencies are missing
+ 
+5. To explore each attack individual, cd into the directory of that attack. Take PolyNetwork as an example,  `cd ~/attackDB/polyattack` and then run the scripts provided below
 
 
 **[PolyNetwork Attack](https://research.kudelskisecurity.com/2021/08/12/the-poly-network-hack-explained/)**
