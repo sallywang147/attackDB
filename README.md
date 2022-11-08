@@ -43,7 +43,7 @@ Before you run the scripts below, you need to make sure you're in the correct at
 
 2. **Deploy relevant buggy contracts:** in the case of PolyNetwork Attack, There are two vulberable contracts - EthCrossChainManager and EthCrossChainData. 
 
-   2a) To deploy buggy EthCrossChainManager, run ``make deploy-buggy-crossChainManager absolute_path=[your-full-path-to-poly-attack]/buggy-contracts/contracts/core/cross_chain_manager/ogic/EthCrossChainManager.sol`.In our case, `make deploy-buggy-crossChainManager absolute_path=/Users/sallywang/attackreplay/polyattack/buggy-contracts/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol`
+   2a) To deploy buggy EthCrossChainManager, run `make deploy-buggy-crossChainManager absolute_path=[your-full-path-to-poly-attack]/buggy-contracts/contracts/core/cross_chain_manager/ogic/EthCrossChainManager.sol`.In our case, `make deploy-buggy-crossChainManager absolute_path=/Users/sallywang/attackreplay/polyattack/buggy-contracts/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol`
    
    2b)To deploy buggy EthCrossChainData, run `make deploy-buggy-crossChainData absolute_path=[your-full-path-to-poly-attack]/buggy-contracts/contracts/core/cross_chain_manager/data/EthCrossChainData.sol`. In our case, the command is `make deploy-buggy-crossChainData absolute_path=/Users/sallywang/attackreplay/polyattack/buggy-contracts/contracts/core/cross_chain_manager/data/EthCrossChainData.sol` If the contract is sucessfully deployed, you will see deployment information like below: 
   
