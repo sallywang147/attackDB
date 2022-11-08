@@ -59,7 +59,7 @@ Before you run the scripts below, you need to make sure you're in the correct at
   3b) To deploy healthy EthCrossChainData, we deploy-healthy-crossChainData absolute_path=/Users/sallywang/attackreplay/polyattack/healthy-contracts/contracts/core/cross_chain_manager/data/EthCrossChainData.sol`. Similar to above, you just need to replace with the correct path. 
   
 
-4. To deploy contrived buggy contracts, 
+4. To deploy contrived buggy contracts, run  `make deploy-contrived`
 
 
 6. Once a contract is deployed, you can interactive with the contract using `cast` command. For example, 
