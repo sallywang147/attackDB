@@ -1,7 +1,7 @@
 **Smart Contract Vulnerablility Database**
 
-As of Nov. 7, this database contains 7 smart-contract based cross bridge attacks and their source code (including both
-the buggy version and developer fixed version) so far. The (perhaps overly ambitious) end goal of this database is to curate all existing smart contract bugs and create a benchmarking and analysis tool for web3 secuirty researchers. 
+As of Nov. 7, this database contains all 7 kown smart-contract based cross bridge attacks and their source code (including both
+the buggy version and developer fixed version) so far. The (perhaps overly ambitious) end goal of this database is to curate all existing smart contract bugs and create a benchmarking and analysis tool for web3 security researchers. 
 
 We build this database based on [foundry](https://github.com/smartcontractkit/foundry-starter-kit)
 for attack reproducing and contracts deploying purposes. Below are the scripts for 1) reproducing each attack; 2) deploying 
