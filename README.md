@@ -37,11 +37,11 @@ provide better clarity for users of this database. The database are below:
 
 Before you run the scripts below, you need to make sure you're in the correct attack directory
 
-0. run make anvil to connect to anvil testnet, which provides you with starter accounts, private keys,  and ethers to experiment with
+0. **Connect to Testnet:** run make anvil to connect to anvil testnet, which provides you with starter accounts, private keys,  and ethers to experiment with
 
-1. To reproduce polynetwork attack on the mainnet: `make attack_vector`. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
+1. **Reproduce Attack on Mainnet:** To reproduce polynetwork attack on the mainnet: `make attack_vector`. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
 
-2. deploy the relevant buggy contracts: in the case of PolyNetwork Attack, There are two vulberable contracts - EthCrossChainManager and EthCrossChainData. 
+2. **Deploy the relevant buggy contracts:** in the case of PolyNetwork Attack, There are two vulberable contracts - EthCrossChainManager and EthCrossChainData. 
 
    2a) To deploy buggy EthCrossChainManager, run ``make deploy-buggy-crossChainManager absolute_path=[your-full-path-to-poly-attack]/buggy-contracts/contracts/core/cross_chain_manager/ogic/EthCrossChainManager.sol`.In our case, `make deploy-buggy-crossChainManager absolute_path=/Users/sallywang/attackreplay/polyattack/buggy-contracts/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol`
    
@@ -53,7 +53,7 @@ Before you run the scripts below, you need to make sure you're in the correct at
   Transaction hash: 0x210d0acde91b555d034699bbd7d3a7d0e7a6b002b7527406c459383e0f071522
   ```
 
-3. To deploy the healthy counter-parts, the procedure is very similar and we won't belabor the point here. 
+3. **Deploy the relevant healthy contracts:** To deploy the healthy counter-parts, the procedure is very similar and we won't belabor the point here. 
 
   3a) To deploy healthy EthCrossChainManager, run `make deploy-healthy-crossChainManager absolute_path=/Users/sallywang/attackreplay/polyattack/healthy-contracts/contracts/core/cross_chain_manager/logic/EthCrossChainManagerForUpgrade.sol`. Please note that the correct contract name is a little different from the buggy version
   
@@ -63,7 +63,7 @@ Before you run the scripts below, you need to make sure you're in the correct at
 4. To deploy contrived buggy contracts, run  `make deploy-contrived`
 
 
-6. Once a contract is deployed, you can interactive with the contract using `cast` command. For example, 
+6. **Interacting with deployed contracts:** Once a contract is deployed, you can interactive with the contract using `cast` command. For example, 
 
 ```
 cast send --private-key YOUR_PRIVATE_KEY \
