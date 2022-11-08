@@ -34,7 +34,7 @@ provide better clarity for users of this database. The database are below:
 
 Before you run the scripts below, you need to make sure you're in the correct attack directory
 
-1. reproduce polynetwork attack on the mainnet: 'make attack_vector'. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
+1. reproduce polynetwork attack on the mainnet: `make attack_vector`. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
 
 2. 
 
