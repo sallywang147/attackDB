@@ -9,15 +9,15 @@ buggy contracts; 3)deploying developed fixed contracts; 4) unit testing buggy co
 of highly sophisticated attacks, we provide contrived buggy contracts to zoom in on the buggy code portion and hopefully 
 provide better clarity for users of this database. The database are below: 
 
-| Attacks       | buggy source code |fixed source code  |contrived bug included     |unit test included|
-| ------------- | ----------------- | ------------------|---------------------------|------------------|
-| PolyNetwork   | yes               | yes               |yes                        | no (fuzz tested) |
-| Qubit bridge  | yes               | yes               |yes                        | yes              |
-| Nomad Bridge  | yes               | yes               |yes                        | yes              |
-| Meter.io      | yes               | yes               |yes                        | yes              |
-| LIFI          | yes               | yes               |yes                        | yes              |
-| ChainSwap 1   | yes               | yes               |yes                        | yes              |
-| ChainSwap 2   | yes               | yes               |yes                        | yes              |
+| Attacks       |  date    |loss($m)|buggy source code |fixed source code  |contrived bug included   |unit test        |
+| ------------- | -------- |------- | ---------------- | ------------------|-------------------------|--- -------------|
+| PolyNetwork   | 8/10/2021|   610  | yes              | yes               | yes                     |no (fuzz tested) |
+| Qubit bridge  | 1/27/2022|   80   | yes              | yes               | yes                     | yes             |
+| Nomad Bridge  | 8/03/2022|   190  | yes              | yes               | yes                     | yes             |
+| Meter.io      | 2/06/2021|   4.4  | yes              | yes               | yes                     | yes             |
+| LIFI          | 3/20/2022|   600  | yes              |yes                | yes                     | yes             |
+| ChainSwap 1   | 7/10/2021|   0.5  | yes              |yes                | yes                     | yes             |
+| ChainSwap 2   | x/xx/2021|   8    | yes              |yes                | yes                     | yes             |
 
 **Set Up**
 
