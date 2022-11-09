@@ -8,7 +8,7 @@
 well when contracts have multiple external dependencies. Therefore, we will provide deploy scripts from Nomad Bridge documentations
 [here](https://github.com/nomad-xyz/monorepo/tree/main/packages/deploy). Nomad has provided full scripts and env config. 
 
-If you'd still like to try deploying with Foundry, then the easiest thing would be change the dependencies in contracts by replacing 
+If you'd still like to try deploying with Foundry, then the easiest thing would be to change the dependencies in contracts by replacing 
 `@[dependent-contracts]` with specific contract paths
 
 3. fuzz test contract is added as NomadFuzz.t.sol
