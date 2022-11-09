@@ -1,4 +1,5 @@
 **[LIFI Attack](https://blocksecteam.medium.com/li-fi-attack-a-cross-chain-bridge-vulnerability-no-its-due-to-unchecked-external-call-c31e7dadf60f)
+
 0. **Connect to Testnet:** run make anvil to connect to anvil testnet, which provides you with starter accounts, private keys,  and ethers to experiment with
 
 1. **Reproduce Attack on Mainnet:** To reproduce polynetwork attack on the mainnet: `make attack_vector`. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
@@ -58,18 +59,49 @@ This assumes a local node it running on localhost:8545. It will deploy your cont
 
 **What's the fix of the bug?**
 
-The buggy contract is in ~/contracts/src/Facets/CBridgeFacet.sol. Our contrived.sol has comments regarding the buggy line and why thaat's a bug
+The buggy contract is in buggy-contracts/contracts/src/Facets/CBridgeFacet.sol. Our contrived.sol has comments regarding the buggy line and why that's a bug. Our Contrived.Sol also provides the fixed code from developers' newest version.
 
-Here's the attack flow (multiple function invocations): 
+This is the buggy function: 
 
-1. `process()` function: a message sender can send tokens to a receiver contract with trusted/verified message. The exploiter
-is able to manipulate the receiver contract address to his/her own by passing in fradulent message
+```
+  function swapAndStartBridgeTokensViaCBridge(
+        LiFiData memory _lifiData,
+        LibSwap.SwapData[] calldata _swapData,
+        CBridgeData memory _cBridgeData
+    ) public payable {
+        if (_cBridgeData.token != address(0)) {
+            uint256 _fromTokenBalance = LibAsset.getOwnBalance(_cBridgeData.token);
 
-2. How does fraulent message pass the check?? because  `process(_msg)` invokes `acceptableRoot(ConfirmedAt(msgCheck(_msg)))`, which further invokes `ConfirmedAt(_root)`
-in the initializer. ConfirmedAt(_root) = 1 whenever root = 0
-
-3. when _msg is fradulent, msgCheck(_msg) returns Null. This means _root = msgCheck(_msg) = Null = 0. Hence,ConfirmedAt(msgCheck(_msg)) = 1. The fraddulent message is always greenlighted!
-
-4. fradulent message passes the `acceptableRoot()` check and the execution continues until  `process()` sends tokens to attacker designated address 
-
-To fix the bug, they added a check in the initializer: `if (_committedRoot != bytes32(0)) confirmAt[_committedRoot] = 1;`
+        // buggy Swap
+            for (uint8 i; i < _swapData.length; i++) {
+                LibSwap.swap(_lifiData.transactionId, _swapData[i]);             
+            }
+  ```
+  
+  This is the developer fixed function: 
+  
+  ```
+    function swapAndStartBridgeTokensViaCBridge(
+        ILiFi.BridgeData memory _bridgeData,
+        LibSwap.SwapData[] calldata _swapData,
+        CBridgeData memory _cBridgeData
+    )
+        external
+        payable
+        refundExcessNative(payable(msg.sender))
+        containsSourceSwaps(_bridgeData)
+        doesNotContainDestinationCalls(_bridgeData)
+        validateBridgeData(_bridgeData)
+        nonReentrant
+    {
+        _bridgeData.minAmount = _depositAndSwap(
+            _bridgeData.transactionId,
+            _bridgeData.minAmount,
+            _swapData,
+            payable(msg.sender)
+        );
+        _startBridge(_bridgeData, _cBridgeData);//this is a private function now in the fixed version
+    }
+ 
+  ```
+  
