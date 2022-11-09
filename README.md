@@ -37,35 +37,7 @@ provide better clarity for users of this database. The database are below:
 
 Before you run the scripts below, you need to make sure you're in the correct attack directory
 
-0. **Connect to Testnet:** run  `make anvil` to connect to anvil testnet, which provides you with starter accounts, private keys,  and ethers to experiment with. This is where you can see your interactive history with deployed contracts: including cast call balance, send ethers, etc. If your connect to anvil succesfully, you should see a pop-up terminal with the following: 
-
-
-                             _   _
-                            (_) | |
-      __ _   _ __   __   __  _  | |
-     / _` | | '_ \  \ \ / / | | | |
-    | (_| | | | | |  \ V /  | | | |
-     \__,_| |_| |_|   \_/   |_| |_|
-
-    0.1.0 (870da6f 2022-10-19T00:12:30.399897Z)
-    https://github.com/foundry-rs/foundry
-
-Available Accounts
-==================
-
-(0) 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (10000 ETH)
-(1) 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 (10000 ETH)
-(2) 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc (10000 ETH)
-(3) 0x90f79bf6eb2c4f870365e785982e1f101e93b906 (10000 ETH)
-(4) 0x15d34aaf54267db7d7c367839aaf71a00a2c6a65 (10000 ETH)
-(5) 0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc (10000 ETH)
-(6) 0x976ea74026e726554db657fa54763abd0c3a0aa9 (10000 ETH)
-(7) 0x14dc79964da2c08b23698b3d3cc7ca32193d9955 (10000 ETH)
-(8) 0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f (10000 ETH)
-(9) 0xa0ee7a142d267c1f36714e4a8f75612f20a79720 (10000 ETH)
-
-Private Keys
-
+0. **Connect to Testnet:** run  `make anvil` to connect to anvil testnet, which provides you with starter accounts, private keys,  and ethers to experiment with. This is where you can see your interactive history with deployed contracts: including cast call balance, send ethers, etc. If your connect to anvil succesfully, you should see a pop-up terminal with Anvil image and a bunch of accounts, prviate keys, Wallet, Base Fee, Gas Limit, and Genesis Timestamp
 
 1. **Reproduce Attack on Mainnet:** To reproduce polynetwork attack on the mainnet: `make attack_vector`. It will generate stack traces when vulnerable functions are invoked and the corrresponding output as a result of invoking vulnerable functions.
 
