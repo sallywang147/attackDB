@@ -47,10 +47,8 @@ If the contract is sucessfully deployed, you will see deployment information lik
    Second, run `forge create ERC20Handler --contracts  [your-full-path-to-attackDB]/qbridgeattack/healthy-contracts/contracts/handlers/ERC20Handler.sol --rpc-url http://localhost:8545  --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`. If you don't know constructor arguments, you can comment out the constructor function and do an abstract deployment 
     
 
-4.  **Deploy contrived contracts:**  To deploy contrived buggy contracts, run  `make deploy-contrived`
 
-
-6. **Interacting with deployed contracts:** Once a contract is deployed, you can interactive with the contract using `cast` command. For example, 
+4. **Interacting with deployed contracts:** Once a contract is deployed, you can interactive with the contract using `cast` command. For example, 
 
 ```
 cast send --private-key YOUR_PRIVATE_KEY \
