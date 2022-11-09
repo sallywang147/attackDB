@@ -24,7 +24,7 @@ is able to manipulate the receiver contract address to his/her own by passing in
 2. How does fraulent message pass the check?? because  `process(_msg)` invokes `acceptableRoot(ConfirmedAt(msgCheck(_msg)))`, which further invokes `ConfirmedAt(_root)`
 in the initializer. ConfirmedAt(_root) = 1 whenever root = 0
 
-3.when _msg is fradulent, msgCheck(_msg) returns Null. This means _root = msgCheck(_msg) = Null = 0. Hence,ConfirmedAt(msgCheck(_msg)) = 1. The fraddulent message is always greenlighted!
+3. when _msg is fradulent, msgCheck(_msg) returns Null. This means _root = msgCheck(_msg) = Null = 0. Hence,ConfirmedAt(msgCheck(_msg)) = 1. The fraddulent message is always greenlighted!
 
 4. fradulent message passes the `acceptableRoot()` check and the execution continues until  `process()` sends tokens to attacker designated address 
 
