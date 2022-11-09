@@ -16,6 +16,8 @@ If you'd still like to try deploying with Foundry, then the easiest thing would 
 
 **What's the fix of the bug?**
 
+Our contrived.sol has comments regarding the buggy line and why thaat's a bug
+
 Here's the attack flow (multiple function invocations): 
 
 1. `process()` function: a message sender can send tokens to a receiver contract with trusted/verified message. The exploiter
