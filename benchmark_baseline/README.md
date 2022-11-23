@@ -1,4 +1,4 @@
-**Benchmark Baseline Results** 
+# Benchmark Baseline Results
 
 In this benchmark folder, we provide proofs of the benchmark baseline that we've run on state-of-art smart contract vulnerability tools. The folder contains the 
 output after we run the tools. In the first table below, we record the vulnerability detection results based on Mythril. 
