@@ -1,4 +1,4 @@
-**Smart Contract Vulnerablility Database**
+# Smart Contract Vulnerablility Database
 
 As of Nov. 7, this database contains all 7 known smart-contract based cross bridge attacks and their source code (including both
 the buggy version and developer fixed version) so far. The (perhaps overly ambitious) end goal of this database is to curate all existing smart contract bugs, provide root cause analysis, and create a benchmarking and analysis tool for web3 security researchers. 
