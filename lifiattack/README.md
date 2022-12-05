@@ -55,6 +55,7 @@ These will run a local hardhat network on localhost:8545 and deploy your contrac
 `yarn local:dev`
 
 This assumes a local node it running on localhost:8545. It will deploy your contracts on it. Plus it will watch for any changes and redeploy them.
+<img width="688" alt="Screen Shot 2022-12-05 at 12 14 22 AM" src="https://user-images.githubusercontent.com/60257613/205554735-f0e96a12-f089-4545-91d0-3b10fc4c051c.png">
 
 
 **What's the fix of the bug?**
