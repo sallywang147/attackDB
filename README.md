@@ -4,7 +4,7 @@ This benchmark contains all known XX existing smart contract bugs and their real
 
 ## [Smart Contract Vulnerablility Benchmark](https://github.com/sallywang147/attackDB) | [Vulnerability Detection Tool SymbolicX](https://github.com/sallywang147/symbolicX)
 
-Our benchmark tool is developed upon the initial classical bugs discovered by [SWC registry](https://github.com/SmartContractSecurity/SWC-registry) and [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) - thanks and credit to SWC and DeFiVulnLab! Our innovation and effort in this benchmark tool are:
+Our benchmark tool is developed upon the initial classical bugs discovered by [SWC registry](https://github.com/SmartContractSecurity/SWC-registry) and [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) - thanks and credit to SWC and DeFiVulnLab! The IDs of bugs in this benchmark are numbered in roughly chronological order - new bugs with low-numbered IDs. Our innovation and effort in this benchmark tool are:
 - 1) while the other tools provide only the code snippets of simplified vulnerable portion, we have curated the in-production contract source code under deployment, including the original buggy version and developer fixed version; 
 - 2) we provide detailed analysis and reproduce bugs from real contract source code. In our analysis, we also include instructions on how to reproduce each bug and how to deploy contracts; 
 - 3) we provide deployment links to deploy the origignal buggy contract source code and fixed contract source code on testnet; 
