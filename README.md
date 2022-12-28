@@ -22,7 +22,7 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 |005 | LIFI          |   600  |[buggy source]               | [developer fix]               | [contrivedbug5.sol]                     | [bug vector2] |[Qbridge Attack] |
 |006 | ChainSwap 1   |   0.5  |[buggy source]               | [developer fix]               | [contrivedbug6.sol]                     | [bug vector2] |[Qbridge Attack] |
 |007 | ChainSwap 2   |   8    | [buggy source]               | [developer fix]               | [contrivedbug7.sol]                     | [bug vector2] |[Qbridge Attack] |
-|008 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug8.sol]                     | [bug vector8] |[xxx Attack] |
+|008 | AnySwap  |   1.4   | [buggy source]               | [developer fix]               | [contrivedbug8.sol]                     | [bug vector8] |[AnySwap Attack] |
 |009 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug9.sol]                     | [bug vector9] |[xxx Attack] |
 |010 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug10.sol]                     | [bug vector10] |[xxx Attack] |
 |011 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug11.sol]                     | [bug vector11] |[xxx Attack] |
