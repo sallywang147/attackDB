@@ -32,11 +32,9 @@ deploy-goerli :; @forge script script/${contract}.s.sol:Deploy${contract} --rpc-
 # This is the private key of account from the mnemonic from the "make anvil" command
 deploy-anvil :; @forge script script/${contract}.s.sol:Deploy${contract} --rpc-url http://localhost:8545  --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --broadcast 
 
-deploy-testnet :; @forge create ${contract_header} --contracts ${absolute_path} --rpc-url http://localhost:8545  --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+deploy-testnet :; @forge create ${contract_header} --contracts ${absolute_path} --constructor-args ${args} --rpc-url http://localhost:8545  --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
 
 deploy-all :; make deploy-${network} contract=APIConsumer && make deploy-${network} contract=KeepersCounter && make deploy-${network} contract=PriceFeedConsumer && make deploy-${network} contract=VRFConsumerV2
 
-
 attack_vector :; @forge test --contracts /Users/sallywang/attackreplay/anyswapattack/attack_vector.sol -vvvv
-
 
