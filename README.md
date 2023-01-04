@@ -4,15 +4,16 @@ This benchmark contains all known XX existing smart contract bugs and their real
 
 ## [Smart Contract Vulnerablility Benchmark](https://github.com/sallywang147/attackDB) | [Vulnerability Detection Tool SymbolicX](https://github.com/sallywang147/symbolicX)
 
-Our benchmark tool is a new realistic evaluation tool covering production-level contracts and is an effort to improve simplified classical bugs covered by [SWC registry](https://github.com/SmartContractSecurity/SWC-registry) and [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) - thanks and credit to SWC and DeFiVulnLab! Many bugs discovered in prior work are obsolete/only legacy bugs due to new solidity compilers and fast-changing solidity semantics. The lack of more recent smart contract bugs and the lack of realistic production-level buggy contracts in the prior databases pose challenges to web3 researchers in the benchmark domain. Thus we have made siginficant effort in this new benchmark tool to improve and provide new benchmark functionalities.  The IDs of bugs in this benchmark are numbered in roughly chronological order - new bugs with low-numbered IDs. Our innovation and effort in this benchmark tool are:
+Our benchmark tool is a new realistic evaluation tool covering production-level contracts and is an effort to improve simplified classical bugs covered by [SWC registry](https://github.com/SmartContractSecurity/SWC-registry) and [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) - thanks and credit to SWC and DeFiVulnLab! However, SWC registry does not provide production-level contract source code or bugs exploited in reality. DeFiVulnLabs provide reproduced bugs, but not contract source code or root cause analysis. Many bugs discovered in prior work are obsolete/only legacy bugs due to new solidity compilers and fast-changing solidity semantics. The lack of more recent smart contract bugs and the lack of realistic production-level buggy contracts in the prior databases pose challenges to web3 researchers in the benchmark domain. Thus we have made siginficant effort in this new benchmark tool to improve and provide new benchmark functionalities.  The IDs of bugs in this benchmark are numbered in roughly chronological order - new bugs with low-numbered IDs. Our innovation and effort in this benchmark tool are:
 - 1) **production-level buggy and fixed contracts:** while the other tools provide only the code snippets of simplified vulnerable portion, we have curated the in-production contract source code under deployment, including the original buggy version and developer fixed version; 
 - 2) **bug analysis and reproducibility:** we provide detailed analysis and reproduce bugs from real contract source code. In our analysis, we also include instructions on how to reproduce each bug and how to deploy contracts; 
 - 3) **deployment of buggy and fixed contracts:** we provide deployment links to deploy the origignal buggy contract source code and fixed contract source code on testnet; 
-- 4) **newest bugs (2021-2022) covered:** we expand to the newest bugs that are not covered by other existing tools;
+- 4) **newest bugs (2021-2023) covered:** we expand to the newest bugs that are not covered by other existing tools;
 - 5) **annotated compilable buggy snippets:** We provide annotated compilable buggy code snippets of each attack for more efficient evaluation.
 
 To the best of our knowledge, this is the only benchmark tool that incorporates the production-level contract source code under deployment, not just simplified buggy code snippets, and incorporates most recent cross-bridge and flashloan bugs. Building this benchmark, we hope to provide smart contract security researchers with a benchmark tool that's realistic and as close to production-level vulnerability as possible. 
 
+### Cross-Bridge Bugs
 
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
@@ -23,8 +24,19 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 |005 | LIFI          |   600  |[buggy source]               | [developer fix]               | [contrivedbug5.sol]                     | [bug vector2] |[Qbridge Attack] |
 |006 | ChainSwap 1   |   0.5  |[buggy source]               | [developer fix]               | [contrivedbug6.sol]                     | [bug vector2] |[Qbridge Attack] |
 |007 | ChainSwap 2   |   8    | [buggy source]               | [developer fix]               | [contrivedbug7.sol]                     | [bug vector2] |[Qbridge Attack] |
-|008 | AnySwap  |   1.4   | [buggy source]               | [developer fix]               | [contrivedbug8.sol]                     | [bug vector8] |[AnySwap Attack] |
+|008 | AnySwap  |   1.4   | [buggy source](https://github.com/sallywang147/attackDB/blob/main/anyswapattack/buggy-contracts/anyswapv4.sol)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/anyswapattack/healthy-contracts)               | [contrivedbug8.sol](https://github.com/sallywang147/attackDB/blob/main/anyswapattack/contrivedbug.sol)                     | [bug vector8](https://github.com/sallywang147/attackDB/blob/main/anyswapattack/attack_vector.sol) |[AnySwap Attack](https://github.com/sallywang147/attackDB/tree/main/anyswapattack)|
 |009 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug9.sol]                     | [bug vector9] |[xxx Attack] |
 |010 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug10.sol]                     | [bug vector10] |[xxx Attack] |
 |011 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug11.sol]                     | [bug vector11] |[xxx Attack] |
 |012 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug12.sol]                     | [bug vector12] |[xxx Attack] |
+
+### Flashloan Bugs - oracle manipulations
+
+|ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|013 | Nimbus Liquidity   |  0.76 | [buggy source](https://github.com/sallywang147/attackDB/tree/main/nimbusattack)               | None              | None                   | [bug vector11](https://github.com/sallywang147/attackDB/blob/main/nimbusattack/attack_vector.sol) |[Nimbus Attack](https://github.com/sallywang147/attackDB/tree/main/nimbusattack) |
+|014 | oneRing Finance  |   2   | not public            | None              | None                     | [bug vector14](https://github.com/sallywang147/attackDB/blob/main/oneringattack/attack_vector.sol) |[oneRing Finance Attack](https://github.com/sallywang147/attackDB/tree/main/oneringattack) |
+|015 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug15.sol]                     | [bug vector15] |[xxx Attack] |
+|016 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug16.sol]                     | [bug vector16] |[xxx Attack] |
+|017 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug17.sol]                     | [bug vector17] |[xxx Attack] |
+|018 | xxx  |   xx   | [buggy source]               | [developer fix]               | [contrivedbug18.sol]                     | [bug vector18] |[xxx Attack] |
