@@ -49,3 +49,6 @@
 [submodule "elasticswsapattack/buggy-contracts"]
 	path = elasticswsapattack/buggy-contracts
 	url = https://github.com/ElasticSwap/elasticswap.git
+[submodule "nxattack/healthy-contracts"]
+	path = nxattack/healthy-contracts
+	url = https://github.com/orbs-network/twap.git
