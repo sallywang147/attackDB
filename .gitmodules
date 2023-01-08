@@ -40,3 +40,12 @@
 [submodule "chainswapAttack/healthy-contracts"]
 	path = chainswapAttack/healthy-contracts
 	url = https://github.com/makevoid/chainswap-contracts.git
+[submodule "creamfiattack/compound-protocol"]
+	path = creamfiattack/compound-protocol
+	url = https://github.com/CreamFi/compound-protocol.git
+[submodule "creamfiattack/--force"]
+	path = creamfiattack/--force
+	url = https://github.com/CreamFi/compound-protocol.git
+[submodule "elasticswsapattack/buggy-contracts"]
+	path = elasticswsapattack/buggy-contracts
+	url = https://github.com/ElasticSwap/elasticswap.git
