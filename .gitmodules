@@ -61,3 +61,9 @@
 [submodule "saddleattack/healthy-contracts"]
 	path = saddleattack/healthy-contracts
 	url = https://github.com/saddle-finance/saddle-contract.git
+[submodule "pbattack/buggy-contracts"]
+	path = pbattack/buggy-contracts
+	url = https://github.com/PancakeBunny-finance/Bunny.git
+[submodule "pbattack/healthy-contracts"]
+	path = pbattack/healthy-contracts
+	url = https://github.com/PancakeBunny-finance/Bunny.git
