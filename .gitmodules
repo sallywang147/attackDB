@@ -67,3 +67,6 @@
 [submodule "pbattack/healthy-contracts"]
 	path = pbattack/healthy-contracts
 	url = https://github.com/PancakeBunny-finance/Bunny.git
+[submodule "waultattack/WAULT"]
+	path = waultattack/WAULT
+	url = https://github.com/WaultFinance/WAULT.git
