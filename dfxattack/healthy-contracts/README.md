@@ -1,0 +1,1 @@
+At the time of attack alert, DFX paused transactions but didn't provide developer fixed contracts

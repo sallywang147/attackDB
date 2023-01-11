@@ -70,3 +70,9 @@
 [submodule "waultattack/WAULT"]
 	path = waultattack/WAULT
 	url = https://github.com/WaultFinance/WAULT.git
+[submodule "dfxattack/contracts"]
+	path = dfxattack/contracts
+	url = https://github.com/dfx-finance/contracts.git
+[submodule "dfxattack/buggy-contracts"]
+	path = dfxattack/buggy-contracts
+	url = https://github.com/dfx-finance/protocol-v1-deprecated.git
