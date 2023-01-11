@@ -52,3 +52,12 @@
 [submodule "nxattack/healthy-contracts"]
 	path = nxattack/healthy-contracts
 	url = https://github.com/orbs-network/twap.git
+[submodule "saddleattack/attackvectors/attack_vector2"]
+	path = saddleattack/attackvectors/attack_vector2
+	url = https://github.com/Hephyrius/Immuni-Saddle-POC.git
+[submodule "saddleattack/buggy-contracts"]
+	path = saddleattack/buggy-contracts
+	url = https://github.com/saddle-finance/saddle-contract.git
+[submodule "saddleattack/healthy-contracts"]
+	path = saddleattack/healthy-contracts
+	url = https://github.com/saddle-finance/saddle-contract.git
