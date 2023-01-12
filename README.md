@@ -54,6 +54,7 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 |022 | Nimbus Liquidity(similar attacks: INUKO, BXH)   |  0.76 | [buggy source](https://github.com/sallywang147/attackDB/tree/main/nimbusattack)               | NA              | NA                  | [bug vector22](https://github.com/sallywang147/attackDB/blob/main/nimbusattack/attack_vector.sol) |[Nimbus Attack](https://github.com/sallywang147/attackDB/tree/main/nimbusattack) |
 |023 | oneRing Finance  |   2   | not public            | NA              | NA                     | [bug vector23](https://github.com/sallywang147/attackDB/blob/main/oneringattack/attack_vector.sol) |[oneRing Finance Attack](https://github.com/sallywang147/attackDB/tree/main/oneringattack) |
 |024 | MUBank(similar attacks: AES, BBOX)  |   0.5   | NA               | NA              | NA                    | [bug vector24](https://github.com/sallywang147/attackDB/blob/main/mubankattack/attack_vector.sol) |[MuBank Attack](https://github.com/sallywang147/attackDB/tree/main/mubankattack) |
+
 </p>
 </details>
 
@@ -75,6 +76,7 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 |033 | Hundred Finance  |   2   | [buggy source]               | [developer fix]               | [contrivedbug33.sol]                     | [bug vector33] |[Hundred Finance Attack] |
 |03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector33] |[XX Attack] |
 |03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
+
 </p>
 </details>
 
@@ -82,9 +84,11 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 <p>
 
 ### Improper Access Control 
+
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |03x | SushiSwap Miso  |   3   | [buggy source]               | [developer fix]               | [contrivedbug9.0.sol][contrivedbug9.1.sol] [contrivedbug9.2.sol] [contrivedbug9.3.sol]                      | [bug vector9] |[xxx Attack] |
 |03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[xxx Attack] |
+
 </p>
 </details>
