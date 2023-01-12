@@ -76,3 +76,6 @@
 [submodule "dfxattack/buggy-contracts"]
 	path = dfxattack/buggy-contracts
 	url = https://github.com/dfx-finance/protocol-v1-deprecated.git
+[submodule "marketattack/buggy-contrcts"]
+	path = marketattack/buggy-contrcts
+	url = https://github.com/curvefi/curve-contract.git
