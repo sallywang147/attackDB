@@ -88,3 +88,9 @@
 [submodule "omniattack/buggy-contracts/buggy-source"]
 	path = omniattack/buggy-contracts/buggy-source
 	url = https://github.com/aave/aave-v3-core.git
+[submodule "feiattack/healthy-contracts"]
+	path = feiattack/healthy-contracts
+	url = https://github.com/fei-protocol/fei-protocol-core.git
+[submodule "feiattack/buggy-contracts"]
+	path = feiattack/buggy-contracts
+	url = https://github.com/fei-protocol/fei-protocol-core.git
