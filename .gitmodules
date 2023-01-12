@@ -82,3 +82,9 @@
 [submodule "marketattack/buggy-contracts"]
 	path = marketattack/buggy-contracts
 	url = https://github.com/curvefi/curve-contract.git
+[submodule "omniattack/healthy-contracts"]
+	path = omniattack/healthy-contracts
+	url = https://github.com/aave/aave-v3-core.git
+[submodule "omniattack/buggy-contracts/buggy-source"]
+	path = omniattack/buggy-contracts/buggy-source
+	url = https://github.com/aave/aave-v3-core.git
