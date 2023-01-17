@@ -97,3 +97,6 @@
 [submodule "beanstalkattack/buggy-contracts"]
 	path = beanstalkattack/buggy-contracts
 	url = https://github.com/BeanstalkFarms/Beanstalk.git
+[submodule "noodleattack/buggy-contracts/buggy-contracts"]
+	path = noodleattack/buggy-contracts/buggy-contracts
+	url = https://github.com/1coinswap/core.git
