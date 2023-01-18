@@ -16,7 +16,7 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 <details><summary> Cross-Bridge Bugs </summary>
 <p>
 
-### Cross-Bridge Bugs
+Cross-Bridge Bugs
 
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
@@ -34,11 +34,10 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 <details><summary> Flashloan Bugs - Oracle and Price Manipulations </summary>
 <p>
 
-### Flashloan Bugs - Oracle and Price Manipulations
+Flashloan Bugs - Oracle and Price Manipulations
 
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
-
-  |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |009 | MonoX  |   30   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/monoswapattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/monoswapattack/healthy-contracts)               | [contrivedbug09.sol](https://github.com/sallywang147/attackDB/blob/main/monoswapattack/contrivedbug.sol)                     | [bug vector09](https://github.com/sallywang147/attackDB/blob/main/monoswapattack/attack_vector.sol) |[MonoX Finance Attack](https://github.com/sallywang147/attackDB/tree/main/monoswapattack) |
 |010 | Cream Finance  |   130   | [buggy source](https://github.com/CreamFi/compound-protocol/tree/73939e7b6bf3a36fb9b39d41e259a97dc416e2a4)              | [developer fix](https://github.com/CreamFi/compound-protocol)               | [contrivedbug10.sol](https://github.com/sallywang147/attackDB/tree/main/creamfiattack/contrivedbug)                     | [bug vector10](https://github.com/sallywang147/attackDB/blob/main/creamfiattack/attack_vector.sol) |[Cream Finance Attack](https://github.com/sallywang147/attackDB/tree/main/creamfiattack) |
 |011 | ElasticSwap  |   0.85   | [buggy source](https://github.com/ElasticSwap/elasticswap/tree/b9bf4b926d5b588e3347c38718b0780e88a57f47)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/elasticswsapattack/healthy-contracts)               | [contrivedbug11.sol](https://github.com/sallywang147/attackDB/blob/main/elasticswsapattack/contrivedbug.sol)                     | [bug vector11](https://github.com/sallywang147/attackDB/blob/main/elasticswsapattack/attack_vector.sol) |[ElasticSwap Attack](https://github.com/sallywang147/attackDB/new/main/elasticswsapattack) |
@@ -62,11 +61,10 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 <details><summary> Flashloan Bugs - Reentrancy  </summary>
 <p>
 
-### Flashloan Bugs - Reentrancy 
+Flashloan Bugs - Reentrancy 
 
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
-
-  |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |025 | Jay  |   0.18   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/jayattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/jayattack/healthy-contracts)               | [contrivedbug25.sol](https://github.com/sallywang147/attackDB/blob/main/jayattack/contrived.sol) | [bug vector25](https://github.com/sallywang147/attackDB/blob/main/jayattack/attack_vector.sol) |[Jay Attack](https://github.com/sallywang147/attackDB/tree/main/jayattack) |
 |026 | DFX  |   5   | [buggy source](https://github.com/dfx-finance/protocol-v1-deprecated/tree/5fbeac837e57ded52e25572390a90c189ef363b1)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/dfxattack/healthy-contracts)               | [contrivedbug26.sol](https://github.com/sallywang147/attackDB/blob/main/dfxattack/contrived.sol)   | [bug vector26](https://github.com/sallywang147/attackDB/blob/main/dfxattack/attack_vector.sol) |[DFX Attack](https://github.com/sallywang147/attackDB/new/main/dfxattack) |
 |027 | Market  |   0.18   | [buggy source](https://github.com/curvefi/curve-contract/tree/b0bbf77f8f93c9c5f4e415bce9cd71f0cdee960e)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/marketattack/healthy-contracts)               | NA                  | [bug vector27](https://github.com/sallywang147/attackDB/blob/main/marketattack/attack_vector.sol) |[Market Attack](https://github.com/sallywang147/attackDB/new/main/marketattack) |
@@ -74,10 +72,15 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 |029 | Fei Protocol  |   80   | [buggy source](https://github.com/fei-protocol/fei-protocol-core/tree/3b4095a69ca8687f46640f8a40df75e0711f2117)               | [developer fix](https://github.com/fei-protocol/fei-protocol-core/tree/be704ad65a84edfafcc09e3e5fa78865f6a1de18)            | [contrivedbug29.sol](https://github.com/sallywang147/attackDB/blob/main/feiattack/contrived.sol)                     | [bug vector29](https://github.com/sallywang147/attackDB/blob/main/feiattack/attack_vector.sol) |[Fei Protocol Attack](https://github.com/sallywang147/attackDB/tree/main/feiattack) |
 |030 | Beanstalk  |   182   | [buggy source](https://github.com/BeanstalkFarms/Beanstalk/tree/7dd0f77e44fe157f294e363bc4b69d8cb1c9f6bb)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/beanstalkattack/healthy-contracts)              | [contrivedbug30.sol](https://github.com/sallywang147/attackDB/blob/main/beanstalkattack/contrived.sol)                    | [bug vector30](https://github.com/sallywang147/attackDB/blob/main/beanstalkattack/attack_vector.sol) |[Beanstalk Attack](https://github.com/sallywang147/attackDB/blob/main/beanstalkattack/attack_vector.sol) |
 |031 | n00dleSwap  |   0.29   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/noodleattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/noodleattack/healthy-contracts)               | [contrivedbug31.sol](https://github.com/sallywang147/attackDB/blob/main/noodleattack/contrived.sol)                     | [bug vector31](https://github.com/sallywang147/attackDB/blob/main/noodleattack/attack_vector.sol) |[n00dleSwap Attack](https://github.com/sallywang147/attackDB/tree/main/noodleattack) |
-|032 | Revest Finance  |   11.2   | [buggy source]               | [developer fix]               | [contrivedbug32.sol]                     | [bug vector32] |[Revest Finance Attack] |
-|033 | Hundred Finance  |   2   | [buggy source]               | [developer fix]               | [contrivedbug33.sol]                     | [bug vector33] |[Hundred Finance Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector33] |[XX Attack] |
+|032 | Revest Finance  |   11.2   | [buggy source](https://github.com/Revest-Finance/RevestContracts/tree/2cab8107b9f570bcfae93df3b928bb5fef3797ef)               | [developer fix](https://github.com/Revest-Finance/RevestContracts/tree/59b533221f62a9a422a2443f2c34060b4c3fd3d1)               | [contrivedbug32.sol](https://github.com/sallywang147/attackDB/blob/main/revestattack/contrived.sol)   | [bug vector32](https://github.com/sallywang147/attackDB/blob/main/revestattack/attack_vector.sol) |[Revest Finance Attack](https://github.com/sallywang147/attackDB/tree/main/revestattack) |
+|033 | Hundred Finance  |   11   | [buggy source1-ERC677](https://github.com/smartcontractkit/LinkToken/tree/8fd6d624d981e39e6e3f55a72732deb9f2f832d9) [buggy source2-Ctoken](https://github.com/compound-finance/compound-protocol/blob/compound/2.31-rc0/contracts/CToken.sol)  | [developer fix](https://github.com/sallywang147/attackDB/tree/main/hundredattack/healthy-contracts)              | [contrivedbug33.sol](https://github.com/sallywang147/attackDB/blob/main/hundredattack/contrived.sol)  | [bug vector33](https://github.com/sallywang147/attackDB/blob/main/hundredattack/attack_vector.sol) |[Hundred Finance Attack](https://github.com/sallywang147/attackDB/blob/main/hundredattack/README.md) |
+|034 | Paraluni  |   1.7   | [buggy source](https://github.com/paraluni/para-contract/tree/1c2737558198e55662b98340a437608f4f0c8ac6)      | TBA      | [contrivedbug34.sol](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/contrived.sol)                     | [bug vector34](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/attack_vector.sol) |[Paraluni Attack](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/README.md) |
+|035 | Bacon Protocol  |   1   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |Baon Attack] |
 |03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
+|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
+|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
+|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
+|04x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug4x.sol]                     | [bug vector4x] |[XX Attack] |
 
 </p>
 </details>
@@ -85,7 +88,7 @@ To the best of our knowledge, this is the only benchmark tool that incorporates 
 <details><summary> Improper Access Control </summary>
 <p>
 
-### Improper Access Control 
+Improper Access Control 
 
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
