@@ -100,3 +100,9 @@
 [submodule "noodleattack/buggy-contracts/buggy-contracts"]
 	path = noodleattack/buggy-contracts/buggy-contracts
 	url = https://github.com/1coinswap/core.git
+[submodule "revestattack/healthy-contracts"]
+	path = revestattack/healthy-contracts
+	url = https://github.com/Revest-Finance/RevestContracts.git
+[submodule "revestattack/buggy-contracts"]
+	path = revestattack/buggy-contracts
+	url = https://github.com/Revest-Finance/RevestContracts.git
