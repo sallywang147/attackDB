@@ -2,7 +2,7 @@
 
 [The fix](https://www.radixdlt.com/post/rekt-retweet-11-re-entrancy-why-the-11m-agave-and-hundred-finance-hacks-could-never-happen-on-radix)
 
-According to the link: The exploit boils down to three issues:
+According to the link, the exploit boils down to three issues:
 
 1. The Agave contract did not follow the “checks-effects-interactions” pattern, as the borrowed funds were released prior to the debt balance being updated.
 
@@ -16,3 +16,4 @@ It involves two buggy contracts:
 ERC677 library contract 
 Ctoken.sol from the compound
 
+The interesting fact is that both contracts employ reentrency guard. However, the reentrancy attack occurs via cross function callback calls. 
