@@ -6,17 +6,32 @@
 
 The bug is in the masterchef contract and the aattacak logic is below
 
+```
   masterchef.depositByAddLiquidity(tokenA, tokenB)
-///         paraRouter.addLiquidity(tokenA, tokenB)
-///             paraRouter.safeTransferFrom(tokenA, masterchef, pair, amount)
-///                 tokenA.transferFrom(masterchef, pair, amount)
-///                     masterchef.depositByAddLiquidity(usdt, busd)
-///                         paraRouter.addLiquidity(usdt, busd)
-///                             paraRouter.safeTransferFrom(usdt, masterchef, pair, amount)
-///                                 usdt.transferFrom(masterchef, pair, amount)
-///                             pair.mint(lp) = amountA
-///                         var.newBalance = amountA
-///                     masterChef._deposit(_pid,amountA,_user)
-///                 pair.mint(lp) = amountB  => useless!!!
-///             var.newBalance = amountA!!!
-///         masterchef._deposit(_pid,amountA,_user)
+  
+         paraRouter.addLiquidity(tokenA, tokenB)
+
+             paraRouter.safeTransferFrom(tokenA, masterchef, pair, amount)
+
+                tokenA.transferFrom(masterchef, pair, amount)
+
+                     masterchef.depositByAddLiquidity(usdt, busd)
+
+                        paraRouter.addLiquidity(usdt, busd)
+
+                             paraRouter.safeTransferFrom(usdt, masterchef, pair, amount)
+
+                                 usdt.transferFrom(masterchef, pair, amount)
+
+                             pair.mint(lp) = amountA
+
+                         var.newBalance = amountA
+
+                     masterChef._deposit(_pid,amountA,_user)
+
+                pair.mint(lp) = amountB  => useless!!!
+
+             var.newBalance = amountA!!!
+
+        masterchef._deposit(_pid,amountA,_user)
+ ```
