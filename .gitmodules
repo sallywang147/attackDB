@@ -106,3 +106,6 @@
 [submodule "revestattack/buggy-contracts"]
 	path = revestattack/buggy-contracts
 	url = https://github.com/Revest-Finance/RevestContracts.git
+[submodule "hundredattack/buggy-contracts"]
+	path = hundredattack/buggy-contracts
+	url = https://github.com/smartcontractkit/LinkToken.git
