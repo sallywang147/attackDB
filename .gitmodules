@@ -109,3 +109,6 @@
 [submodule "hundredattack/buggy-contracts"]
 	path = hundredattack/buggy-contracts
 	url = https://github.com/smartcontractkit/LinkToken.git
+[submodule "paraluniattack/buggy-contracts"]
+	path = paraluniattack/buggy-contracts
+	url = https://github.com/paraluni/para-contract.git
