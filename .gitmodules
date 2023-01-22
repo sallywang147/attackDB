@@ -124,3 +124,9 @@
 [submodule "dodoattack/buggy-conntracts"]
 	path = dodoattack/buggy-conntracts
 	url = https://github.com/DODOEX/dodo-smart-contract.git
+[submodule "sushiattack/healthy-contracts"]
+	path = sushiattack/healthy-contracts
+	url = https://github.com/code-423n4/contracts.git
+[submodule "sushiattack/buggy-contracts"]
+	path = sushiattack/buggy-contracts
+	url = https://github.com/code-423n4/contracts.git
