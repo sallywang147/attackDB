@@ -112,3 +112,6 @@
 [submodule "paraluniattack/buggy-contracts"]
 	path = paraluniattack/buggy-contracts
 	url = https://github.com/paraluni/para-contract.git
+[submodule "visorattack/healthy-contracts"]
+	path = visorattack/healthy-contracts
+	url = https://github.com/VisorFinance/hypervisor.git
