@@ -75,12 +75,21 @@ Flashloan Bugs - Reentrancy
 |032 | Revest Finance  |   11.2   | [buggy source](https://github.com/Revest-Finance/RevestContracts/tree/2cab8107b9f570bcfae93df3b928bb5fef3797ef)               | [developer fix](https://github.com/Revest-Finance/RevestContracts/tree/59b533221f62a9a422a2443f2c34060b4c3fd3d1)               | [contrivedbug32.sol](https://github.com/sallywang147/attackDB/blob/main/revestattack/contrived.sol)   | [bug vector32](https://github.com/sallywang147/attackDB/blob/main/revestattack/attack_vector.sol) |[Revest Finance Attack](https://github.com/sallywang147/attackDB/tree/main/revestattack) |
 |033 | Hundred Finance  |   11   | [buggy source1-ERC677](https://github.com/smartcontractkit/LinkToken/tree/8fd6d624d981e39e6e3f55a72732deb9f2f832d9) [buggy source2-Ctoken](https://github.com/compound-finance/compound-protocol/blob/compound/2.31-rc0/contracts/CToken.sol)  | [developer fix](https://github.com/sallywang147/attackDB/tree/main/hundredattack/healthy-contracts)              | [contrivedbug33.sol](https://github.com/sallywang147/attackDB/blob/main/hundredattack/contrived.sol)  | [bug vector33](https://github.com/sallywang147/attackDB/blob/main/hundredattack/attack_vector.sol) |[Hundred Finance Attack](https://github.com/sallywang147/attackDB/blob/main/hundredattack/README.md) |
 |034 | Paraluni  |   1.7   | [buggy source](https://github.com/paraluni/para-contract/tree/1c2737558198e55662b98340a437608f4f0c8ac6)      | TBA      | [contrivedbug34.sol](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/contrived.sol)                     | [bug vector34](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/attack_vector.sol) |[Paraluni Attack](https://github.com/sallywang147/attackDB/blob/main/paraluniattack/README.md) |
-|035 | Bacon Protocol  |   1   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |Baon Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[XX Attack] |
-|04x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug4x.sol]                     | [bug vector4x] |[XX Attack] |
+|035 | Bacon Protocol  |   1   | destructed    |  destructed             | NA                    | [bug vector35](https://github.com/sallywang147/attackDB/blob/main/baconattack/attack_vector.sol) |Bacon Attack](https://github.com/sallywang147/attackDB/tree/main/baconattack) |
+|036 | Visor Finance  |   8.2   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/visorattack/buggy-contracts)               | [developer fix](https://github.com/VisorFinance/hypervisor/tree/01d896d79ef8c0498d3b3cdfe2abc64c66555fb4)               | [contrivedbug36.sol](https://github.com/sallywang147/attackDB/blob/main/visorattack/contrived.sol)   | [bug vector36](https://github.com/sallywang147/attackDB/blob/main/visorattack/attack_vector.sol) |[Visor Attack](https://github.com/sallywang147/attackDB/tree/main/visorattack) |
+|037 | Grim Finance  |   30   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/grimattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/grimattack/healthy-contracts)               | [contrivedbug37.sol](https://github.com/sallywang147/attackDB/blob/main/grimattack/contrived.sol)  | [bug vector37](https://github.com/sallywang147/attackDB/blob/main/grimattack/attack_vector.sol) | [Grim finance Attack](https://github.com/sallywang147/attackDB/tree/main/grimattack) |
+|038 | XSurge  |   31  | [buggy source](https://github.com/sallywang147/attackDB/tree/main/xsurgeattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/xsurgeattack/healthy-contract)              | [contrivedbug38.sol](https://github.com/sallywang147/attackDB/blob/main/xsurgeattack/contrived.sol)                  | [bug vector38](https://github.com/sallywang147/attackDB/blob/main/xsurgeattack/attack_vector.sol) |[XSurge Attack](https://github.com/sallywang147/attackDB/tree/main/xsurgeattack) |
+|039 | Rari Capital  |   80   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/rariattack/buggy-contracts)              | [developer fix](https://github.com/sallywang147/attackDB/tree/main/rariattack/healthy-contracts)               | [contrivedbug39.sol](https://github.com/sallywang147/attackDB/blob/main/rariattack/contrived.sol)                     | [bug vector39](https://github.com/sallywang147/attackDB/blob/main/rariattack/attack_vector.sol) |[Rari Capital Attack](https://github.com/sallywang147/attackDB/tree/main/rariattack) |
+|040 | Value Defi  |   7.4   | [buggy source](https://github.com/valuedefi/vaults/tree/dba5c437e721c11d51844f67f46dffd1dcdcbb57)              | [developer fix](https://github.com/valuedefi/vaults/tree/dba5c437e721c11d51844f67f46dffd1dcdcbb57)            | TBA                 | [bug vector40](https://github.com/sallywang147/attackDB/blob/main/valueattack/attack_vector.sol) |[Value Defi Attack](https://github.com/sallywang147/attackDB/tree/main/valueattack) |
+|041 | DODO Finance  |   3.8   | [buggy source](https://github.com/DODOEX/dodo-smart-contract/tree/master/contracts)               | [developer fix](https://github.com/DODOEX/contractV2)               | [contrivedbug41.sol](https://github.com/sallywang147/attackDB/blob/main/dodoattack/contrived.sol)             | [bug vector41](https://github.com/sallywang147/attackDB/blob/main/dodoattack/attack_vector.sol) |[DODO Finance Attack](https://github.com/sallywang147/attackDB/tree/main/dodoattack) |
+|042 | Harvest Finance  |   34  | [buggy source](https://github.com/harvest-finance/harvest/tree/c3376f9a0a86ca67e1c891ffe451b70f2f4d970d)               | [developer fix](https://github.com/harvest-finance/harvest/tree/master)              | [contrivedbug42.sol](https://github.com/sallywang147/attackDB/blob/main/harvestattack/contrived.sol)   | [bug vector42](https://github.com/sallywang147/attackDB/blob/main/harvestattack/attack_vector.sol) |[Harvest Finance Attack](https://github.com/sallywang147/attackDB/blob/main/harvestattack/README.md) |
+|043 | MidasCapital  |  0.65  | TBA   | TBA   | TBA                    | [bug vector43](https://github.com/sallywang147/attackDB/blob/main/midasattack/attack_vector.sol) |[MidasCapital Attack](https://github.com/sallywang147/attackDB/tree/main/midasattack) |
+|04x | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector4x]() |[XX Attack]() |
+|04x | XXX  |   XX   | [buggy source]()              | [developer fix]()              | [contrivedbug4x.sol]()                     | [bug vector4x]() |[XX Attack]() |
+|04x | XXX  |   XX   | [buggy source]()             | [developer fix]()               | [contrivedbug4x.sol]()                  | [bug vector4x]() |[XX Attack]() |
+|04x | XXX  |   XX   | [buggy source]()              | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector4x] |[XX Attack] |
+|04x | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector4x] |[XX Attack] |
+|05x | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 
 </p>
 </details>
@@ -93,7 +102,16 @@ Improper Access Control
 |ID  | Attacks       |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |03x | SushiSwap Miso  |   3   | [buggy source]               | [developer fix]               | [contrivedbug9.0.sol][contrivedbug9.1.sol] [contrivedbug9.2.sol] [contrivedbug9.3.sol]                      | [bug vector9] |[xxx Attack] |
-|03x | XXX  |   XX   | [buggy source]               | [developer fix]               | [contrivedbug3x.sol]                     | [bug vector3x] |[xxx Attack] |
+|05x | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector5x]() |[XX Attack]() |
+|05x | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 
 </p>
+</details>
+
+<details><summary> Arithmetic Flaws </summary>
+<p>
+
+ Arithmetic Flaws 
+ 
+ </p>
 </details>
