@@ -115,3 +115,9 @@
 [submodule "visorattack/healthy-contracts"]
 	path = visorattack/healthy-contracts
 	url = https://github.com/VisorFinance/hypervisor.git
+[submodule "valueattack/buggy-contracts"]
+	path = valueattack/buggy-contracts
+	url = https://github.com/valuedefi/vaults.git
+[submodule "valueattack/healthy-contracts"]
+	path = valueattack/healthy-contracts
+	url = https://github.com/valuedefi/vaults.git
