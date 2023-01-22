@@ -121,3 +121,6 @@
 [submodule "valueattack/healthy-contracts"]
 	path = valueattack/healthy-contracts
 	url = https://github.com/valuedefi/vaults.git
+[submodule "dodoattack/buggy-conntracts"]
+	path = dodoattack/buggy-conntracts
+	url = https://github.com/DODOEX/dodo-smart-contract.git
