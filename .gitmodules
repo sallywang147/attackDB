@@ -133,3 +133,6 @@
 [submodule "templedaoattack/healthy-contracts"]
 	path = templedaoattack/healthy-contracts
 	url = https://github.com/TempleDAO/temple.git
+[submodule "babyswapattack/buggy-contracts"]
+	path = babyswapattack/buggy-contracts
+	url = https://github.com/babyswap/baby-swap-contract.git
