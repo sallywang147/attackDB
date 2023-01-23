@@ -130,3 +130,6 @@
 [submodule "sushiattack/buggy-contracts"]
 	path = sushiattack/buggy-contracts
 	url = https://github.com/code-423n4/contracts.git
+[submodule "templedaoattack/healthy-contracts"]
+	path = templedaoattack/healthy-contracts
+	url = https://github.com/TempleDAO/temple.git
