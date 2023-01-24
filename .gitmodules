@@ -136,3 +136,9 @@
 [submodule "babyswapattack/buggy-contracts"]
 	path = babyswapattack/buggy-contracts
 	url = https://github.com/babyswap/baby-swap-contract.git
+[submodule "immunefiattack/buggy-contracts"]
+	path = immunefiattack/buggy-contracts
+	url = https://github.com/88mphapp/88mph-contracts.git
+[submodule "immunefiattack/healthy-contracts"]
+	path = immunefiattack/healthy-contracts
+	url = https://github.com/88mphapp/88mph-contracts.git
