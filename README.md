@@ -124,16 +124,24 @@ Interger Overflow
  
 |ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
-|057 |  Umbrella Network   |   0.7  | [buggy source(https://github.com/sallywang147/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [developer fix](https://github.com/umbrella-network/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [contrivedbug57.sol](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/contrived.sol)                     | [bug vector57](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/attack_vector.sol) |[Umbrella Network  Attack](https://github.com/sallywang147/attackDB/tree/main/umbrellaattack) |
+|057 |  Umbrella Network   |   0.7  | [buggy source](https://github.com/sallywang147/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [developer fix](https://github.com/umbrella-network/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [contrivedbug57.sol](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/contrived.sol)                     | [bug vector57](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/attack_vector.sol) |[Umbrella Network  Attack](https://github.com/sallywang147/attackDB/tree/main/umbrellaattack) |
  
 Miscalculations 
  
 |ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
-|058 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
+|058 | VFT  |   0.6   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[VFT Attack]() |
 |059 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 |060 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 |061 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
  
  </p>
 </details>
+
+<details><summary> unchecked function calls or variables </summary>
+<p>
+ 
+
+ </p>
+</details>
+ 
