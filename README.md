@@ -114,9 +114,22 @@ Improper Access Control
 <details><summary> Arithmetic Flaws </summary>
 <p>
 
- Arithmetic Flaws 
-|056 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug4x.sol]()                     | [bug vector5x]() |[XX Attack]() |
-|057 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
+Interger Overflow 
+ 
+|ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|056 |  Beauty Chain  |   900   | [buggy source](https://github.com/sallywang147/attackDB/tree/main/beautyattack/buggy-contracts)               | [developer fix](https://github.com/sallywang147/attackDB/tree/main/beautyattack/healthy-contracts)               | [contrivedbug56.0.sol](https://github.com/sallywang147/attackDB/blob/main/beautyattack/contrived.sol) [contrivedbug56.1.sol](https://swcregistry.io/docs/SWC-101#integer-overflow-mulsol)     | [bug vector56](https://github.com/sallywang147/attackDB/blob/main/beautyattack/attack_vector.sol) |[ Beauty Chain Attack](https://github.com/sallywang147/attackDB/tree/main/beautyattack) |
+
+ Interger Underflow 
+ 
+|ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|057 |  Umbrella Network   |   0.7  | [buggy source(https://github.com/sallywang147/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [developer fix](https://github.com/umbrella-network/overture/tree/12c87f697a644fc02e001f3ec7fb379792ac4ce0)               | [contrivedbug57.sol](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/contrived.sol)                     | [bug vector57](https://github.com/sallywang147/attackDB/blob/main/umbrellaattack/attack_vector.sol) |[Umbrella Network  Attack](https://github.com/sallywang147/attackDB/tree/main/umbrellaattack) |
+ 
+Miscalculations 
+ 
+|ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |058 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 |059 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
 |060 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
