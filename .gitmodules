@@ -145,3 +145,9 @@
 [submodule "bancorattack/healthy-contracts"]
 	path = bancorattack/healthy-contracts
 	url = https://github.com/bancorprotocol/contracts-v3.git
+[submodule "umbrellaattack/healthy-contracts"]
+	path = umbrellaattack/healthy-contracts
+	url = https://github.com/umbrella-network/overture.git
+[submodule "umbrellaattack/buggy-contracts"]
+	path = umbrellaattack/buggy-contracts
+	url = https://github.com/sallywang147/overture.git
