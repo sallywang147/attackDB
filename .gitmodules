@@ -142,3 +142,6 @@
 [submodule "immunefiattack/healthy-contracts"]
 	path = immunefiattack/healthy-contracts
 	url = https://github.com/88mphapp/88mph-contracts.git
+[submodule "bancorattack/healthy-contracts"]
+	path = bancorattack/healthy-contracts
+	url = https://github.com/bancorprotocol/contracts-v3.git
