@@ -130,17 +130,38 @@ Miscalculations
  
 |ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
-|058 | VFT  |   0.6   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[VFT Attack]() |
-|059 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
-|060 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
-|061 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug5x.sol]()                     | [bug vector5x]() |[XX Attack]() |
- 
+|058 | VFT  |   0.6   | [buggy source](https://github.com/sallywang147/attackDB/blob/main/vftattack/NRBTCToken.sol)               | [developer fix]()               | [contrivedbug58.sol](https://github.com/sallywang147/attackDB/blob/main/vftattack/contrived.sol)                     | [bug vector5x](https://github.com/sallywang147/attackDB/blob/main/vftattack/attack_vector.sol) |[VFT Attack](https://github.com/sallywang147/attackDB/tree/main/vftattack) |
+|059 | RL  |   Unknown   | [buggy source](https://bscscan.com/address/0x4bbfae575dd47bcfd5770ab4bc54eb83db088888#code)   | [developer fix]()               | [contrivedbug59.sol]()          | [bug vector59](https://github.com/sallywang147/attackDB/blob/main/rlattack/attack_vector.sol) |[RL Attack](https://github.com/sallywang147/attackDB/tree/main/rlattack) |
+|060 | DPC  |   1  | [buggy source]()               | [developer fix]()               | [contrivedbug60.sol]()                     | [bug vector6x]() |[DPC Attack]() |
+|061 | MEV Bot  |   2   | [buggy source]()               | [developer fix]()               | [contrivedbug61.sol]()                     | [bug vector61]() |[MEV Bot Attack]() |
+|062 | YYDS  |   10   | [buggy source]()               | [developer fix]()               | [contrivedbug62.sol]()                     | [bug vector62]() |[YYDS Attack]() |
+|063 | SNOOD  |   0.5   | [buggy source]()               | [developer fix]()               | [contrivedbug63.sol]()                    | [bug vector63]() |[SNOOD  Attack]() |
+|064 | BRA |   0.23   | [buggy source]()               | [developer fix]()               | [contrivedbug64.sol]()                     | [bug vector64]() |[BRA Attack]() |
  </p>
 </details>
 
 <details><summary> unchecked function calls or variables </summary>
 <p>
  
+unchecked function calls or variables
+ 
+|ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|065 | OmniState  |   0.7   | [buggy source]()               | [developer fix]()               | [contrivedbug65.sol]()                     | [bug vector65]() |[OmniState Attack]() |
+|066 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector66]() |[XX Attack]() |
+
+ </p>
+</details>
+
+<details><summary> unchecked function calls or variables </summary>
+<p>
+ 
+unchecked function calls or variables
+ 
+|ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
+|--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
+|06X | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug6x.sol]()                     | [bug vector6x]() |[XX Attack]() |
+|06X | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug6x.sol]()                     | [bug vector6x]() |[XX Attack]() |
 
  </p>
 </details>
