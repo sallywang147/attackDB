@@ -153,10 +153,10 @@ unchecked function calls or variables
  </p>
 </details>
 
-<details><summary> unchecked function calls or variables </summary>
+<details><summary> Logic Flaws </summary>
 <p>
  
-unchecked function calls or variables
+Logic Flaws
  
 |ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
