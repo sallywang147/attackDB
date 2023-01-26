@@ -1,6 +1,6 @@
 # [Overview](https://github.com/sallywang147/attackDB/edit/webpage)
 
-This benchmark contains 120 known recent(2020-2023) smart contract bugs and their real contract source code (over 500 smart contracts), including the newest cross-bridge bugs, such as PolyNetwork, and flashloan attacks, such as DODO V2. We also use [Foundry](https://github.com/foundry-rs/foundry) to reproduce each bug in the forked network environment. 
+This benchmark contains 85 known recent(2020-2023) smart contract bugs and their real contract source code (over 500 smart contracts), including the newest cross-bridge bugs, such as PolyNetwork, and flashloan attacks, such as DODO V2. We also use [Foundry](https://github.com/foundry-rs/foundry) to reproduce each bug in the forked network environment. 
 
 ## [Smart Contract Vulnerablility Benchmark](https://github.com/sallywang147/attackDB) | [Vulnerability Detection Tool SymbolicX](https://github.com/sallywang147/symbolicX)
 
@@ -149,6 +149,10 @@ unchecked function calls or variables
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
 |065 | OmniState  |   0.7   | [buggy source]()               | [developer fix]()               | [contrivedbug65.sol]()                     | [bug vector65]() |[OmniState Attack]() |
 |066 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector66]() |[XX Attack]() |
+|067 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector66]() |[XX Attack]() |
+|068 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector66]() |[XX Attack]() |
+|069 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector66]() |[XX Attack]() |
+|070 | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug66.sol]()                     | [bug vector70]() |[XX Attack]() |
 
  </p>
 </details>
