@@ -164,8 +164,12 @@ Logic Flaws
  
 |ID  | Attacks  |loss($m)|buggy contracts | developer fixed contracts |annotated bug snippets  |reproduced bugs |  analysis|
 |--- | ------------- |------- | ---------------- |-------------------|-------------------------| ---|---|
-|06X | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug6x.sol]()                     | [bug vector6x]() |[XX Attack]() |
-|06X | XXX  |   XX   | [buggy source]()               | [developer fix]()               | [contrivedbug6x.sol]()                     | [bug vector6x]() |[XX Attack]() |
+|085 | Seaman  |   0.07   | [buggy source]()               | [developer fix]()               | [contrivedbug85.sol]()                     | [bug vector85]() |[Seaman Attack]() |
+|086 | BDEX  |   0.2   | [buggy source]()               | [developer fix]()               | [contrivedbug86.sol]()                     | [bug vector86]() |[BDEX Attack]() |
+|086 | BDEX  |   0.2   | [buggy source]()               | [developer fix]()               | [contrivedbug87.sol]()                     | [bug vector86]() |[BDEX Attack]() |
+|087 | Health  |   0.18   | [buggy source]()               | [developer fix]()               | [contrivedbug87.sol]()                     | [bug vector87]() |[Health Attack]() |
+|088 | BDEX  |   0.2   | [buggy source]()               | [developer fix]()               | [contrivedbug88.sol]()                     | [bug vector88]() |[BDEX Attack]() |
+|089 | BDEX  |   0.2   | [buggy source]()               | [developer fix]()               | [contrivedbug89.sol]()                     | [bug vector89]() |[BDEX Attack]() |
 
  </p>
 </details>
