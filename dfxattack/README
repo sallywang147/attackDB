@@ -1,0 +1,3 @@
+[dfx attack analysis](https://medium.com/@lbsmhmdakr17/the-dfx-finance-hack-is-detailed-november-2022-a88f1f6a8ec9)
+
+This is a reentrancy bug in curve.sol contract. It's enabled by flashloan
